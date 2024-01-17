@@ -1,0 +1,12 @@
+name: New PR
+on:
+  pull_request_target:
+    types:
+      - closed
+jobs:
+  pr:
+    if: ${{ github.event.pull_request.base.ref == 'main' && github.event.pull_request.head.ref == 'next' }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          gh pr -H next -B main -t 'chore: release'
