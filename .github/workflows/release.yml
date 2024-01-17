@@ -19,3 +19,5 @@ jobs:
         run: |
           npm i -D semantic-release @semantic-release/git @semantic-release/changelog conventional-changelog-conventionalcommits
           npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
