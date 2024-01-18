@@ -3,10 +3,14 @@ on:
   pull_request_target:
     types:
       - closed
+permissions:
+  pull-requests: write
 jobs:
   pr:
     if: ${{ github.event.pull_request.base.ref == 'main' && github.event.pull_request.head.ref == 'next' }}
     runs-on: ubuntu-latest
     steps:
       - run: |
-          gh pr -H next -B main -t 'chore: release'
+          gh pr create -H next -B main -t 'chore: release'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
