@@ -1,3 +1,10 @@
+## [0.2.0](https://github.com/Tom-abc/nynygo/compare/v0.1.0...v0.2.0) (2024-01-18)
+
+
+### Features
+
+* lcm ([#6](https://github.com/Tom-abc/nynygo/issues/6)) ([23eb8cd](https://github.com/Tom-abc/nynygo/commit/23eb8cd460579e3482afae066a51747ee5e7280d))
+
 ## [0.1.0](https://github.com/Tom-abc/nynygo/compare/v0.0.0...v0.1.0) (2024-01-18)
 
 
