@@ -1,3 +1,10 @@
+## [0.3.0](https://github.com/Tom-abc/nynygo/compare/v0.2.0...v0.3.0) (2024-01-19)
+
+
+### Features
+
+* isprime ([#8](https://github.com/Tom-abc/nynygo/issues/8)) ([4cd07b6](https://github.com/Tom-abc/nynygo/commit/4cd07b6047886f3b47f0eacf6c29d71106736386))
+
 ## [0.2.0](https://github.com/Tom-abc/nynygo/compare/v0.1.0...v0.2.0) (2024-01-18)
 
 
