@@ -11,6 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          gh pr create -H next -B main -t 'chore: release' -b ''
+          gh pr create -H next -B main -t 'chore: release' -b '' -R ${{ github.repository }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
