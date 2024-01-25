@@ -1,0 +1,19 @@
+name: Release PR
+on:
+  push:
+    branches:
+      - next
+permissions:
+  pull-requests: write
+jobs:
+  PR:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          if (( `gh pr list -H next -B main -R ${{ github.repository }} --json title --limit 1 --jq '. | length'` == 0 )) 
+          then
+            gh pr create -H next -B main -t 'chore: release' -b '' -R ${{ github.repository }}
+          fi
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

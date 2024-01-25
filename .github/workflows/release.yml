@@ -7,7 +7,7 @@ jobs:
   Release:
     permissions:
       contents: write
-    if: github.event.pull_request.base.ref == 'main' && github.event.pull_request.head.ref == 'next'
+    if: github.event.pull_request.base.ref == 'main' && github.event.pull_request.head.ref == 'next' && github.event.pull_request.merged
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -22,14 +22,3 @@ jobs:
           npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  PR:
-    permissions:
-      pull-requests: write
-    needs:
-      - Release
-    runs-on: ubuntu-latest
-    steps:
-      - run: |
-          gh pr create -H next -B main -t 'chore: release' -b '' -R ${{ github.repository }}
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
