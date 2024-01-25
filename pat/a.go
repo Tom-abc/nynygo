@@ -12,6 +12,6 @@ func Multiply(a, b int) int {
 	return a * b
 }
 
-func mod(a, b int) int {
+func Mod(a, b int) int {
 	return a % b
 }
