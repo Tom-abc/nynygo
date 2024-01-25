@@ -11,3 +11,7 @@ func Subtract(a, b int) int {
 func Multiply(a, b int) int {
 	return a * b
 }
+
+func mod(a, b int) int {
+	return a % b
+}
