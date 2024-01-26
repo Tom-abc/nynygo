@@ -1,13 +1,12 @@
 name: Release
 on:
-  pull_request_target:
-    types:
-      - closed
+  push:
+    branches:
+      - main
 jobs:
   Release:
     permissions:
       contents: write
-    if: github.event.pull_request.base.ref == 'main'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
