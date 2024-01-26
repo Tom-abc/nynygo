@@ -1,5 +1,9 @@
 package pat
 
+import (
+	"errors"
+)
+
 func Gcd(a, b int) int {
 	for b != 0 {
 		a, b = b, a%b
@@ -23,10 +27,12 @@ func IsPrime(n int) bool {
 	return n > 1
 }
 
-func Determinant(mk [][]float64) float64 {
+var ErrIllegalMatrix = errors.New("not a square matrix")
+
+func Determinant(mk [][]float64) (float64, error) {
 	for i := 0; i < len(mk); i++ {
 		if len(mk) != len(mk[i]) {
-			panic("not a square matrix")
+			return 0, ErrIllegalMatrix
 		}
 	}
 	m := make([][]float64, len(mk))
@@ -47,7 +53,7 @@ func Determinant(mk [][]float64) float64 {
 				}
 			}
 			if b {
-				return 0
+				return 0, nil
 			}
 		}
 		for i := j + 1; i < len(m); i++ {
@@ -58,5 +64,5 @@ func Determinant(mk [][]float64) float64 {
 		}
 		r *= m[j][j]
 	}
-	return r * m[len(m)-1][len(m)-1]
+	return r * m[len(m)-1][len(m)-1], nil
 }
