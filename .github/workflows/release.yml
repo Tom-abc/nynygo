@@ -7,7 +7,7 @@ jobs:
   Release:
     permissions:
       contents: write
-    if: github.event.pull_request.base.ref == 'main' && github.event.pull_request.head.ref == 'next' && github.event.pull_request.merged
+    if: github.event.pull_request.base.ref == 'main' && github.event.pull_request.head.ref == 'next'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
