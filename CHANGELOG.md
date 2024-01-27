@@ -1,3 +1,15 @@
+## [0.4.1](https://github.com/Tom-abc/nynygo/compare/v0.4.0...v0.4.1) (2024-01-27)
+
+
+### Bug Fixes
+
+* licence ([#18](https://github.com/Tom-abc/nynygo/issues/18)) ([bba217e](https://github.com/Tom-abc/nynygo/commit/bba217eeda673972de0287c439053b86460fba84))
+
+
+### Reverts
+
+* "chore: licence" ([740e8ad](https://github.com/Tom-abc/nynygo/commit/740e8ad087230ca7df8aa218f85988a0edfd9df8))
+
 ## [0.4.0](https://github.com/Tom-abc/nynygo/compare/v0.3.0...v0.4.0) (2024-01-26)
 
 
