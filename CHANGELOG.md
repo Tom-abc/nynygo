@@ -1,3 +1,17 @@
+## [0.4.0](https://github.com/Tom-abc/nynygo/compare/v0.3.0...v0.4.0) (2024-01-26)
+
+
+### Features
+
+* determinant ([#15](https://github.com/Tom-abc/nynygo/issues/15)) ([bbda687](https://github.com/Tom-abc/nynygo/commit/bbda687b1d841644f315e6dc64aacda9a6a5ffeb))
+* mod ([#13](https://github.com/Tom-abc/nynygo/issues/13)) ([14eb9b0](https://github.com/Tom-abc/nynygo/commit/14eb9b08ea9bf03c823a712bbac9ac4bd11c42fa))
+
+
+### Reverts
+
+* "chore: release" ([#16](https://github.com/Tom-abc/nynygo/issues/16)) ([de19c93](https://github.com/Tom-abc/nynygo/commit/de19c931a0c6b5e51e009f4fca5530c02365b642))
+* "revert: "chore: release"" ([#17](https://github.com/Tom-abc/nynygo/issues/17)) ([4ce5ac3](https://github.com/Tom-abc/nynygo/commit/4ce5ac3e73df10a91310392af839c1dc33f05484))
+
 ## [0.3.0](https://github.com/Tom-abc/nynygo/compare/v0.2.0...v0.3.0) (2024-01-19)
 
 
